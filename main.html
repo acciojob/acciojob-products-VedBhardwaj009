@@ -1,23 +1,91 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AccioJob Products</title>
+    <style>
+        /* Add your CSS styles here */
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        .row{
+            display: flex;
+            gap: 24px;
+        }
+        .row-1{
+            justify-content: space-between;
+        }
+        .row-1 .dsa{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            background-color: maroon;
+            color: white;
+            height: 75px;
+            justify-content: center;
+        }
+        .row-1 .mern{
+            width: 30%;
+            height: 75px;
+            background-color: orange;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .row-2{
+            justify-content: center;
+        }
+        .row-2 .acciojob{
+            width: 75%;
+            background-color: blue;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 75px;
+        }
+        .row-3{
+            justify-content: space-between;
+        }
+        .row-3 .business-analytics{
+            width: 40%;
+            display: flex;
+            align-items: center;
+            background-color: teal;
+            color: white;
+            height: 75px;
+            justify-content: center;
+        }
+        .row-3 .spring{
+            flex-grow: 1;
+            height: 75px;
+            margin-left: 10px;
+            background-color: red;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <div id="wrapper">
-        <div class="product" id="acciojob">AccioJob</div>
-        <div class="product" id="dsa">DSA</div>
-        <div class="product" id="mern">MERN</div>
-        <div class="product" id="buisness-analytics">Buisness Analytics</div>
-        <div class="product" id="spring">Spring</div>
-    </div>
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <!-- Add your HTML content here -->
+     <div class="container">
+        <div class="row row-1">
+            <div class="dsa">DSA</div>
+            <div class="mern">MERN</div>
+        </div>
+        <div class="row row-2">
+            <div class="acciojob">AccioJob</div>
+        </div>
+        <div class="row row-3">
+            <div class="business-analytics">Business Analytics</div>
+            <div class="spring">Spring</div>
+        </div>
+     </div>
 </body>
-
 </html>
